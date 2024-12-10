@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project101</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .main{
+        width: 700px;
+        height: auto;
+        border-radius: 10px;
+        border: 5px solid black;
+        padding: 20px;
+        }
+        /* .form{
+            height: 30px; 
+            width: 230px;                         
+            border-radius: 7px; 
+            font-size: smaller; 
+            padding: 4px;
+        } */
+        /* .custom.checkbox{
+            width: 10px;
+            height: 10px;
+            border: 2px solid skyblue;
+            display: block;
+            border-radius: 10%;
+
+        } */
+        .colunmtable{
+            border: 3px solid rgb(146, 145, 145);
+            display: block;
+            width: 15em;
+            height: auto;
+            font-family: sans-serif;
+            font-weight: 90;
+            line-height: 35px;
+            border-radius: 7px;
+            left: 200px;
+        }
+        .filtercode{
+            border: 3px solid rgb(146, 145, 145);
+            display: block;
+            width: 18em;
+            height: 16em;
+            font-family: sans-serif;
+            font-weight: 90;
+            line-height: 35px;
+            border-radius: 7px;
+            left: 200px;
+            padding: 15px;
+        }
+        .table{
+            display: flex;
+            justify-content: space-between;
+        }
+        .coltab{
+            line-height: 30px;
+        }
+        #filter{
+            line-height: 30px;
+        }
+        /* .table{
+            display: inline-block;
+        } */
+         .image{
+            display: flex;
+         }
+         .one{
+            line-height: 35px;
+         }
+         .two{
+            margin-left: 55px;
+         }
+        button{
+            background-color: blue;
+            color: white;
+            height: 30px;
+            width: 50px;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            margin-top: 15px;
+            margin-left: 245px;
+        } 
+        .button{
+            margin-top: 35px;
+        }
+        .button a{
+            padding: 10px 40px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: red;
+            border: 2px solid red;
+        }
+        .button .exe{
+            border: none;
+            background-color: blue;
+            color: white;
+            margin-left: 29px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+       <div class="form">
+        <form action="" method="post" name="empForm">
+            <label for="empFirstName" style="font-weight: bold;">Table Name<em style="color: red;">*</em></label> <br>
+            <input 
+            type="text"
+            name="empFirstName"
+            maxlength="20"
+            minlength="3"
+            placeholder="Table Name"
+            size="30"
+            tabindex="-1" style="height: 30px; width: 230px; border-radius: 7px; font-size: smaller;
+             padding: 4px; background-color: rgb(218, 214, 214);"/>
+       </div>
+       <br>
+       <div class="table">
+         <div class="coltab">
+            <label for="colunmtable" style="font-weight: 250; font-family: sans-serif ;">Column Name 
+                <div class="colunmtable">
+                   <input type="checkbox" checked> Division <br>
+                    <input type="checkbox" > Division Code <br>
+                    <input type="checkbox"> Portfolio <br>
+                   <input type="checkbox"> Portfolio Code <br>
+                   <input type="checkbox"> Region <br>
+                   <input type="checkbox"> Region Code
+                   <!-- <span class="custom-checkbox"></span> -->
+                </div>
+            </label>
+            <br>
+            <div class="images">
+                <label for="tab">Tables<br>
+                    <div class="image">
+                        <div class="one">
+                            <label for="images">Table 1         
+                                <img src="./candlechart.png" alt=""  width="20px">
+                                <img src="./redstuff.png" alt="" width="20px">
+                             </label>  
+                            <br>
+                             <label for="images">Table 2   
+                                <img src="./candlechart.png" alt=""  width="20px">
+                                <img src="./redstuff.png" alt="" width="20px">
+                             </label>  
+                             <br>
+                            <label for="images">Table 3   
+                                <img src="./candlechart.png" alt=""  width="20px">
+                                <img src="./redstuff.png" alt="" width="20px">
+                            </label>  
+                        </div>
+                        <div class="two">
+                            <label for="images">Table 4
+                                <img src="./candlechart.png" alt=""  width="20px">
+                                <img src="./redstuff.png" alt="" width="20px">
+                            </label>  
+                         </div>
+                    </div>
+                 </label>
+              </div>
+         </div>
+         <div id="filter">
+             <label for="filterTable"  style="font-weight: 250; font-family: sans-serif ;">Filter
+                 <div class="filtercode">
+                     <input type="checkbox"> Division Code <br>
+                     <input
+                     type="text"
+                     name="empFirstName"
+                     maxlength="20"
+                     minlength="3"
+                     size="30"
+                     tabindex="-1" style="height: 30px; width: 230px; border-radius: 7px;
+                     font-size: smaller; padding: 4px; margin-left: 25px; background-color: rgb(218, 214, 214);"/> <br>
+  
+                     <input type="checkbox"> Portfolio code <br>
+                     <input
+                     type="text"
+                     name="empFirstName"
+                     maxlength="20"
+                     minlength="3"
+                     size="30"
+                     tabindex="-1" style="height: 30px; width: 230px; border-radius: 7px;
+                     font-size: smaller; padding: 4px; margin-left: 25px; background-color: rgb(218, 214, 214);"/> <br>
+  
+                
+                     <input type="checkbox"> Region Code <br>
+                      <input
+                     type="text"
+                     name="empFirstName"
+                     maxlength="20"
+                     minlength="3"
+                     size="30"
+                     tabindex="-1" style="height: 30px; width: 230px; border-radius: 7px;
+                     font-size: smaller; padding: 4px; margin-left: 25px; background-color: rgb(218, 214, 214);"/>
+                   </div>
+              </label>
+              <button>+ Add</button>
+              <div class="button">
+                <a href="#">Cancel</a>
+                <a class="exe">Execute</a>
+              </div>
+           </div>
+       </div>
+      
+    </div>
+</body>
+</html>
